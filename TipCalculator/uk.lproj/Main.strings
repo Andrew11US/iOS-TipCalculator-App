@@ -1,0 +1,30 @@
+
+/* Class = "UITextField"; placeholder = "$9.99"; ObjectID = "DQ3-8k-wf4"; */
+"DQ3-8k-wf4.placeholder" = "$9.99";
+
+/* Class = "UILabel"; text = "Total:"; ObjectID = "Sfa-lA-Mwn"; */
+"Sfa-lA-Mwn.text" = "Всього:";
+
+/* Class = "UILabel"; text = "$15.00"; ObjectID = "YqG-Mk-yY7"; */
+"YqG-Mk-yY7.text" = "$15.00";
+
+/* Class = "UILabel"; text = "Tip Percentage:"; ObjectID = "kf2-jN-V74"; */
+"kf2-jN-V74.text" = "Відсоток:";
+
+/* Class = "UISegmentedControl"; mNk-Rd-XZw.segmentTitles[0] = "10%"; ObjectID = "mNk-Rd-XZw"; */
+"mNk-Rd-XZw.segmentTitles[0]" = "10%";
+
+/* Class = "UISegmentedControl"; mNk-Rd-XZw.segmentTitles[1] = "15%"; ObjectID = "mNk-Rd-XZw"; */
+"mNk-Rd-XZw.segmentTitles[1]" = "15%";
+
+/* Class = "UISegmentedControl"; mNk-Rd-XZw.segmentTitles[2] = "20%"; ObjectID = "mNk-Rd-XZw"; */
+"mNk-Rd-XZw.segmentTitles[2]" = "20%";
+
+/* Class = "UILabel"; text = "$115.00"; ObjectID = "myv-Pd-Ua1"; */
+"myv-Pd-Ua1.text" = "$115.00";
+
+/* Class = "UILabel"; text = "Bill:"; ObjectID = "sZF-Hx-0xU"; */
+"sZF-Hx-0xU.text" = "Рахунок:";
+
+/* Class = "UILabel"; text = "Tip:"; ObjectID = "tU3-jb-wDl"; */
+"tU3-jb-wDl.text" = "Чайові:";

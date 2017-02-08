@@ -8,16 +8,63 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, UITextFieldDelegate {
+    
+    @IBOutlet weak var billTextField: UITextField!
+    @IBOutlet weak var tipSegmentedControl: UISegmentedControl!
+    @IBOutlet weak var tipLabel: UILabel!
+    @IBOutlet weak var totalLabel: UILabel!
+    
+    @IBOutlet weak var tipLbl: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        self.billTextField.delegate = self
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        billTextField.resignFirstResponder()
+        return true
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func textFieldCalculation(_ sender: Any) {
+        calculateTotal()
+    }
+    
+    @IBAction func valueChanged(_ sender: Any) {
+        calculateTotal()
+    }
+    
+    func calculateTotal() {
+        if let bill: Double = Double(self.billTextField.text!) {
+            
+            var tipPercentage: Double = 0.1
+            
+            if self.tipSegmentedControl.selectedSegmentIndex == 0 {
+                tipPercentage = 0.1
+            }
+            
+            if self.tipSegmentedControl.selectedSegmentIndex == 1 {
+                tipPercentage = 0.15
+            }
+            
+            if self.tipSegmentedControl.selectedSegmentIndex == 2 {
+                tipPercentage = 0.2
+            }
+            
+            let tip = bill * tipPercentage
+            let total = tip + bill
+            
+            self.tipLabel.text = "$\(tip)"
+            self.totalLabel.text = "$\(total)"
+        }
+        
     }
 
 

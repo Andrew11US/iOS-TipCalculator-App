@@ -12,6 +12,7 @@
 		9018293A1E4A7DE200FDC42B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 901829381E4A7DE200FDC42B /* Main.storyboard */; };
 		9018293C1E4A7DE200FDC42B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9018293B1E4A7DE200FDC42B /* Assets.xcassets */; };
 		9018293F1E4A7DE200FDC42B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9018293D1E4A7DE200FDC42B /* LaunchScreen.storyboard */; };
+		9049B49D1E4B201500D465E2 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9049B49C1E4B201500D465E2 /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		9018293B1E4A7DE200FDC42B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9018293E1E4A7DE200FDC42B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		901829401E4A7DE200FDC42B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9049B49C1E4B201500D465E2 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		9049B49E1E4B24F400D465E2 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Main.strings; sourceTree = "<group>"; };
+		9049B49F1E4B24F400D465E2 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 				9018293B1E4A7DE200FDC42B /* Assets.xcassets */,
 				9018293D1E4A7DE200FDC42B /* LaunchScreen.storyboard */,
 				901829401E4A7DE200FDC42B /* Info.plist */,
+				9049B49C1E4B201500D465E2 /* CustomTextField.swift */,
 			);
 			path = TipCalculator;
 			sourceTree = "<group>";
@@ -139,6 +144,7 @@
 			files = (
 				901829371E4A7DE200FDC42B /* ViewController.swift in Sources */,
 				901829351E4A7DE200FDC42B /* AppDelegate.swift in Sources */,
+				9049B49D1E4B201500D465E2 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +155,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				901829391E4A7DE200FDC42B /* Base */,
+				9049B49E1E4B24F400D465E2 /* uk */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -157,6 +164,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				9018293E1E4A7DE200FDC42B /* Base */,
+				9049B49F1E4B24F400D465E2 /* uk */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -168,6 +176,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -218,6 +227,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -302,6 +312,7 @@
 				901829451E4A7DE200FDC42B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
