@@ -61,8 +61,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
             let tip = bill * tipPercentage
             let total = tip + bill
             
-            self.tipLabel.text = "$\(tip)"
-            self.totalLabel.text = "$\(total)"
+            // Currency Formatter with localization by Default
+            let currencyFarmatter = NumberFormatter()
+            currencyFarmatter.numberStyle = .currency
+            
+            self.tipLabel.text = currencyFarmatter.string(from: NSNumber(value: tip))
+            self.totalLabel.text = currencyFarmatter.string(from: NSNumber(value: total))
         }
         
     }
